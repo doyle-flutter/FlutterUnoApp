@@ -3,7 +3,17 @@
 //  socket_io_client: ^0.9.10
 //  flutter_local_notifications: ^1.4.3
 
-// * AndroidManifest.xml
+
+// * IOS(Objective-C) : Runner > AppDelegate.m
+// ...
+//  if (@available(iOS 10.0, *)) {
+//   [UNUserNotificationCenter currentNotificationCenter].delegate = (id<UNUserNotificationCenterDelegate>) self;
+//  }
+// return [...];
+// }
+// @end
+
+// * Android : AndroidManifest.xml
 //    <uses-permission android:name="android.permission.INTERNET" />
 //    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 //    <uses-permission android:name="android.permission.VIBRATE" />
